@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main_div">
+        <form name="calc">
+            <input type="text" name="" value="Calculator" id="app_name">
+            <input type="text" name="answer" id="display_answer">
+
+            <div class="layer-2">
+                <input type="button" value="c" id="clearButton" onclick="calc.answer.value='' "  class="oper">
+                <input type="button" value="=" onclick="calc.answer.value=eval(calc.answer.value)"  class="oper">
+            </div>
+            <div class="layer-1">
+                <input type="button" class="main_num" value="7" onclick="calc.answer.value+='7'">
+                <input type="button" class="main_num" value="8" onclick="calc.answer.value+='8'">
+                <input type="button" class="main_num" value="9" onclick="calc.answer.value+='9'">
+                <input type="button" class="oper" value="+" onclick="calc.answer.value+='+'">
+            </div>
+            <div class="layer-1">
+                <input type="button" class="main_num" value="4" onclick="calc.answer.value+='4'">
+                <input type="button" class="main_num" value="5" onclick="calc.answer.value+='5'">
+                <input type="button" class="main_num" value="6" onclick="calc.answer.value+='6'">
+                <input type="button" class="oper" value="-" onclick="calc.answer.value+='-'">
+            </div>
+            <div class="layer-1">
+                <input type="button" class="main_num" value="3" onclick="calc.answer.value+='3'">
+                <input type="button" class="main_num" value="2" onclick="calc.answer.value+='2'">
+                <input type="button" class="main_num" value="1" onclick="calc.answer.value+='1'">
+                <input type="button" class="oper" value="x" onclick="calc.answer.value+='*'">
+            </div>
+            <div class="layer-1">
+                <input type="button" class="main_num" value="%" onclick="calc.answer.value+='%'">
+                <input type="button" class="main_num" value="0" onclick="calc.answer.value+='0'">
+                <input type="button" class="main_num" value="." onclick="calc.answer.value+='.'">
+                <input type="button" class="oper" value="/" onclick="calc.answer.value+='/'">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
